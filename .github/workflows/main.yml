@@ -1,19 +1,6 @@
 name: 'CI Multiplatform Build'
 
-on:
-  push:
-    paths-ignore:
-      - '**.md'
-    branches:
-      - master
-      - 'release/**'
-    tags:
-      - '*'
-  pull_request:
-    paths-ignore:
-      - '**.md'
-    branches:
-      - master
+on: workflow_dispatch
 
 env:
   MACOS_CEF_BUILD_VERSION: '4638'
