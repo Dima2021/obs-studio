@@ -1,4 +1,4 @@
-name: 'CI Multiplatform Build'
+name: 'Source Files Matching'
 
 on: workflow_dispatch
 
