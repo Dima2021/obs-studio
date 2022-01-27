@@ -1,9 +1,7 @@
 name: 'Source Files Matching'
 
-on:
-  push:
-    tags:
-      - '*'
+on: workflow_dispatch
+
       
 env:
   WINDOWS_CEF_BUILD_VERSION: '4638'
