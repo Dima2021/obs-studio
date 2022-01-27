@@ -1,7 +1,10 @@
 name: 'Source Files Matching'
 
-on: workflow_dispatch
-
+on:
+  push:
+    tags:
+      - '*'
+      
 env:
   WINDOWS_CEF_BUILD_VERSION: '4638'
   TWITCH_CLIENTID: ${{ secrets.TWITCH_CLIENT_ID }}
